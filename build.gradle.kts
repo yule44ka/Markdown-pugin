@@ -12,8 +12,9 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation("org.jetbrains.kotlin:kotlin-reflect:1.9.10")
     implementation("com.formdev:flatlaf:3.1") // FlatLaf for dark theme
+    implementation("org.commonmark:commonmark:0.21.0") // CommonMark for Markdown parsing
+    implementation("org.commonmark:commonmark:0.21.0") // CommonMark for Markdown
 }
 
 application {
