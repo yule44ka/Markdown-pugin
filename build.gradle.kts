@@ -12,7 +12,8 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation("org.jetbrains.kotlin:kotlin-reflect:1.9.10") // Optional for reflection
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.9.10")
+    implementation("com.formdev:flatlaf:3.1") // FlatLaf for dark theme
 }
 
 application {

@@ -1,18 +1,30 @@
+import com.formdev.flatlaf.FlatDarkLaf
 import java.awt.BorderLayout
+import java.awt.Color
 import java.awt.event.ActionEvent
 import java.nio.file.Files
 import java.nio.file.Paths
 import javax.swing.*
 
 fun main() {
+    // Set the FlatLaf dark theme
+    UIManager.setLookAndFeel(FlatDarkLaf())
+
     SwingUtilities.invokeLater {
         val frame = JFrame("Markdown Viewer")
         frame.defaultCloseOperation = JFrame.EXIT_ON_CLOSE
-        frame.setSize(600, 400)
+        frame.setSize(800, 600) // Adjusted size for better layout
 
+        // Create a stylish JTextArea with custom font and colors
         val textArea = JTextArea()
         textArea.isEditable = false
+        textArea.background = Color(43, 43, 43) // Dark background color
+        textArea.foreground = Color(187, 187, 187) // Light text color
+        textArea.caretColor = Color(187, 187, 187) // Caret color for better visibility
+        textArea.font = textArea.font.deriveFont(14f) // Set a readable font size
+
         val scrollPane = JScrollPane(textArea)
+        scrollPane.border = BorderFactory.createEmptyBorder() // Remove border for a cleaner look
 
         val loadButton = JButton("Load Markdown File")
         loadButton.addActionListener { _: ActionEvent ->
