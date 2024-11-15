@@ -32,4 +32,3 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 1. **Load Markdown File**: Click the `Load Markdown File` button to select a `.md` file from your file system.
 2. **Render Markdown**: Click the `Render Markdown` button to display the rendered HTML version of the Markdown file.
-3. **Hyperlinks**: Click on hyperlinks in the rendered content to open them in a dialog box.
