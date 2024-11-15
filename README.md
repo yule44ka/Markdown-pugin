@@ -6,6 +6,8 @@ A desktop application developed in Kotlin to load and display the contents of Ma
 
 - **Load Markdown Files**: Easily select and load `.md` files from your local disk.
 - **Plain Text Display**: Displays the contents of Markdown files without formatting.
+
+   *Additional*:
 - **Formatted Markdown Rendering**: Renders Markdown files in HTML format for better visualization.
 - **Hyperlink Support**: Clickable links in the rendered Markdown content.
 
